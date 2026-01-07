@@ -6,6 +6,7 @@ import json
 import psycopg2
 
 from airflow import DAG
+from airflow.operators.bash import BashOperator 
 from airflow.operators.python import PythonOperator
 
 def get_data():
@@ -90,4 +91,9 @@ with DAG(
         python_callable=load_to_bronze,
     )
 
-    load_task >> write_task
+    run_dbt = BashOperator(                    
+        task_id='run_dbt',                                   
+        bash_command='cd /opt/dbt/weather_dwh && dbt run'
+    )
+
+    load_task >> write_task >> run_dbt
