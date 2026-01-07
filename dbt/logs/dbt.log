@@ -1,0 +1,25 @@
+[0m16:12:40.403731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074ccd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4c250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4c580>]}
+
+
+============================== 16:12:40.406222 | f13a37d1-fae6-47b0-a752-dc52fc62cf87 ==============================
+[0m16:12:40.406222 [info ] [MainThread]: Running with dbt=1.10.18
+[0m16:12:40.406478 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'introspect': 'True', 'static_parser': 'True', 'empty': 'None', 'no_print': 'None', 'log_cache_events': 'False', 'log_format': 'default', 'target_path': 'None', 'printer_width': '80', 'warn_error': 'None', 'fail_fast': 'False', 'invocation_command': 'dbt init weather_dwh', 'profiles_dir': '/Users/kapko/.dbt', 'partial_parse': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager'}
+[0m16:12:40.412133 [info ] [MainThread]: Creating dbt configuration folder at /Users/kapko/.dbt
+[0m16:12:40.412866 [debug] [MainThread]: Starter project path: /Users/kapko/projects/de/dwh-pet/venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m16:12:40.416114 [info ] [MainThread]: 
+Your new dbt project "weather_dwh" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:12:40.416256 [info ] [MainThread]: Setting up your profile.
